@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-file-storage",
+  "version": "1.0.0",
+  "description": "Simple CRUD with Node.js and data storage in local files",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andradeoromulo/nodejs-file-storage.git"
+  },
+  "author": "Erick Wendel / Rômulo Andrade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andradeoromulo/nodejs-file-storage/issues"
+  },
+  "homepage": "https://github.com/andradeoromulo/nodejs-file-storage#readme",
+  "devDependencies": {
+    "mocha": "^8.2.0"
+  }
+}

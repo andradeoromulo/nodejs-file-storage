@@ -15,7 +15,7 @@ class FileManager {
          * Reading the JSON file with readFile as a Promise.
          * We could just require the JSON file, but the goal is to practice the filesystem management.
         */
-        const file = await readFileSync(this.FILE_PATH, "utf-8");
+        const file = await readFileSync(this.FILE_PATH);
         return JSON.parse(file.toString());
     }
 
@@ -49,17 +49,23 @@ class FileManager {
         return filteredData;
     }
 
-    async update(id, updatedItem) {
+    async update(id, updatedProps) {
         const existingData = await this.fetchFileData();
 
-        const itemIndex = existingData.findIndex((item) => item.id === parseInt(id));
+        const itemIndex = existingData.findIndex((item) => item.id === id);
 
         if(itemIndex === -1)
             throw new Error("Not such item in the file");
         
-        existingData[itemIndex] = updatedItem;
+        const existingItem = existingData[itemIndex];
+        existingData.splice(itemIndex, 1);
+
+        const updatedItem = {
+            ...existingItem,
+            ...updatedProps
+        }
         
-        return await this.writeFileData(existingData);
+        return await this.writeFileData([...existingData, updatedItem]);
     }
 
     async delete(id) {
@@ -68,7 +74,7 @@ class FileManager {
 
         const existingData = await this.fetchFileData();  
 
-        const itemIndex = existingData.findIndex((item) => item.id === parseInt(id));
+        const itemIndex = existingData.findIndex((item) => item.id === id);
         
         if(itemIndex === -1) 
             throw new Error("Not such item in the file");

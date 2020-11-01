@@ -1,11 +1,11 @@
 const { deepStrictEqual, ok } = require("assert");
 const { DEFAULT_ECDH_CURVE } = require("tls");
-const FileManager = require('./FileManager');
+const FileManager = require("./FileManager");
 
 const charactherFileManager = new FileManager("./data/characters.json");
 
 const CHARACTER_SCHEMA = {
-    "id": 1,
+    "id": "1",
     "name": "Penny",
     "birthday": "Fall 2nd",
     "gifts": ["Diamond", "Emerald", "Melon", "Poppy"]
@@ -30,7 +30,7 @@ describe("Stardew Characters CRUD", () => {
 
     it("Must be able to update an specific character in the file", async() => {
         const expected = {
-            "id": 1,
+            "id": "1",
             "name": "Penny",
             "birthday": "Fall 2nd",
             "gifts": ["Poppyseed Muffin", "Red Plate", "Roots Platter", "Sandfish"]

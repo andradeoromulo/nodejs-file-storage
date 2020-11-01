@@ -18,5 +18,8 @@
   "homepage": "https://github.com/andradeoromulo/nodejs-file-storage#readme",
   "devDependencies": {
     "mocha": "^8.2.0"
+  },
+  "dependencies": {
+    "commander": "^6.2.0"
   }
 }

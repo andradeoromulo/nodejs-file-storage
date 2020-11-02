@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/andradeoromulo/nodejs-file-storage#readme",
   "devDependencies": {
+    "ajv": "^6.12.6",
+    "chai": "^4.2.0",
+    "chai-json-schema-ajv": "^5.1.0",
     "mocha": "^8.2.0"
   },
   "dependencies": {

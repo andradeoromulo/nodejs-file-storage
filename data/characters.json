@@ -1,1 +1,53 @@
-[{"id":"*","name":"Eric Barone a.k.a. ConcernedApe","birthday":"December 3rd","gifts":["An amazing community","Sharing Experiences"]}]
+[
+    {
+        "id": "1",
+        "name": "Penny",
+        "birthday": "Fall 2nd",
+        "gifts": [
+            "Diamond",
+            "Emerald",
+            "Melon",
+            "Poppy"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Leah",
+        "birthday": "Winter 23rd",
+        "gifts": [
+            "Goat Cheese",
+            "Salad",
+            "Wine",
+            "Truffle"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Wizard",
+        "birthday": "Winter 17th",
+        "gifts": [
+            "Solar Essence",
+            "Purple Mushroom",
+            "Super Cucumber",
+            "Void Essence"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Robin",
+        "birthday": "Fall 1st",
+        "gifts": [
+            "Goat Cheese",
+            "Peach",
+            "Spaghetti"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Pierre",
+        "birthday": "Spring 26th",
+        "gifts": [
+            "Fried Calamari"
+        ]
+    }
+]

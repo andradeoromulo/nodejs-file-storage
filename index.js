@@ -9,15 +9,15 @@ async function main() {
     Commander
         .version("v1.0.0")
 
-        .option("-i, --id [value]", "Character ID")
-        .option("-n, --charname [value]", "Character name")
-        .option("-b, --birthday [value]", "Character birthday")
-        .option("-g, --gifts [values...]", "Character favorite gifts")
+        .option("-i, --id [value]", "send character ID")
+        .option("-n, --charname [value]", "send character name")
+        .option("-b, --birthday [value]", "send character birthday")
+        .option("-g, --gifts [values...]", "send character favorite gifts")
 
-        .option("-c, --create", "Create a new character")
-        .option("-l, --list", "List all characters")
-        .option("-d, --delete", "Delete an specific character")
-        .option("-u, --update", "Update an specific character")
+        .option("-c, --create", "create a new character")
+        .option("-l, --list", "list all characters")
+        .option("-d, --delete", "delete an specific character")
+        .option("-u, --update", "update an specific character")
 
         .parse(process.argv);
     
